@@ -23,7 +23,7 @@ body {
 #volverBtn {
   display: none;
   position: fixed;
-  bottom: 40px;
+  bottom: 80px;
   right: 30px;
   z-index: 99;
   border: none;
