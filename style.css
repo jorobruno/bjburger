@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
+body {
+  font-size: 10px;
+  font-family: "Raleway", sans-serif;
+  background: rgb(148, 5, 5);
+  background: radial-gradient(
+    circle,
+    rgba(148, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-image: url("img/background.png");
+  background-position: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#volverBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#volverBtn:hover {
+  background-color: #555;
+}
+
+#marca {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 3px 3.5px black;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 2% auto;
+}
+
+#intro {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 0px 2px 12px rgba(255, 255, 255, 1);
+}
+
+#logo {
+  width: 400px;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 412px) {
+  #logo {
+    width: 300px;
+  }
+}
+
+.navbar-nav a {
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.slider {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .slider {
+    display: none;
+  }
+}
+
+
+.carousel {
+  border-radius: 10px;
+  border: 3px solid white;
+  overflow: hidden;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 90%;
+  min-height: 435px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0px 1px 3px rgb(191, 5, 5);
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+.botonera {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.botonera a {
+  margin: 0 2rem 0 2rem;
+}
+
+.hamburguesas {
+  display: none;
+}
+
+.papas {
+  display: none;
+}
+
+.panchos {
+  display: none;
+}
+
+.ensaladas {
+  display: none;
+}
+
+.helados {
+  display: none;
+}
+
+.bebidas {
+  display: none;
+}
+
+#activo {
+  width: 100%;
+  display: block;
+}
+
+.subtitulo {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0px 4px black;
+}
+
+@media only screen and (max-width: 415px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+}
+
+#mapa {
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #mapa {
+    width: 300px; 
+    height: 300px;
+  }
+}
+
+.contacto {
+  max-width: 700px;
+}
+
+form label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#mensaje {
+  width: 100%;
+  height: 200px;
+  vertical-align: top;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+form button {
+  padding: .4rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#hora {
+  text-align: end;
+}

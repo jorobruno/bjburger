@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/icono.png" />
+    <title>B&J Burger</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md bg-light navbar-light" id="inicio">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" id="marca"><img src="img/Logo.png" alt="Logo" id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#expandirNav"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="expandirNav">
+                <div class="navbar-nav w-100 justify-content-end">
+                    <a href="#menu" class="nav-link">Menú</a>
+                    <a href="#sucursales" class="nav-link">Sucursales</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Boton volver al inicio-->
+    <button onclick="volverInicio()" id="volverBtn" title="Volver al inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 11.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </button>
+    <div class="container intro">
+        <p id="intro">
+            En B&J no copiamos una hamburguesa, la reinventamos. Desarrollamos una receta exclusiva, utilizando un blend
+            de 3 cortes distintos de carne 100% vacuna proveniente de los mejores campos del pais. Y un pan casero
+            especialmente desarrollado por un productor local para nosotros.
+        </p>
+    </div>
+
+    <!--Slider-->
+    <div class="container-md slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider/1.png" class="d-block w-100 center-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/2.png" class="d-block w-100 center-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/3.png" class="d-block w-100 center-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/4.png" class="d-block w-100 center-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/5.png" class="d-block w-100 center-block" alt="..." />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--Menu-->
+    <div class="container">
+        <h2 id="menu" class="subtitulo">NUESTRO MENÚ</h2>
+    </div>
+    <nav class="nav justify-content-center botonera">
+        <a href="#menu" class="nav-link" id="btnHamburguesas"><img src="img/iconos/icono_burger.png"
+                alt="Hamburguesas" /></a>
+        <a href="#menu" class="nav-link" id="btnPapas"><img src="img/iconos/icono_papa.png" alt="Papas" /></a>
+        <a href="#menu" class="nav-link" id="btnPancho"><img src="img/iconos/icono_pancho.png" alt="Panchos" /></a>
+        <a href="#menu" class="nav-link" id="btnSalads"><img src="img/iconos/icono_tomaco.png" alt="Saludable" /></a>
+        <a href="#menu" class="nav-link" id="btnHelado"><img src="img/iconos/icono_helado.png" alt="Helados" /></a>
+        <a href="#menu" class="nav-link" id="btnBebida"><img src="img/iconos/icono_bebida.png" alt="Bebidas" /></a>
+    </nav>
+
+    <!--Hamburguesas-->
+    <div class="container-md hamburguesas" id="activo">
+        <div class="row justify-content-center" align="center">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/1_Cheese_Burger_A.jpg" class="card-img-top" alt="Cheese-Burger" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese Burger</h5>
+                        <p class="card-text">
+                            160 grs. de carne, lechuga, Cheddar y tomate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/2_Bacon_Cheese_Burger_A.jpg" class="card-img-top"
+                        alt="Bacon-Cheese-Burger" />
+                    <div class="card-body">
+                        <h5 class="card-title">Bacon Cheese Burger</h5>
+                        <p class="card-text">
+                            160 grs. de carne, panceta ahumada y Cheddar y tomate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/3_The_Duchess_A.jpg" class="card-img-top" alt="The-Duchess" />
+                    <div class="card-body">
+                        <h5 class="card-title">The Duchess</h5>
+                        <p class="card-text">
+                            320 grs. de carne, doble panceta ahumada y doble Cheddar
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/4_Master_Co_A.jpg" class="card-img-top" alt="Master-Co" />
+                    <div class="card-body">
+                        <h5 class="card-title">Master Co</h5>
+                        <p class="card-text">
+                            320 grs. de carne, doble Cheddar, pepino, cebolla crispy y salsa
+                            Master.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/5_Kid_Co_A.jpg" class="card-img-top" alt="Kid-Co" />
+                    <div class="card-body">
+                        <h5 class="card-title">Kid Co</h5>
+                        <p class="card-text">
+                            320 grs. de carne doble Cheddar, alioli trufado y manteca soft.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/6_Lover_Co_A.jpg" class="card-img-top" alt="Lover-Co" />
+                    <div class="card-body">
+                        <h5 class="card-title">Lover Co</h5>
+                        <p class="card-text">
+                            320 grs. de carne, doble Cheddar, cebolla morada y salsa
+                            Baconnaise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/7_The_Duchess_Facts_A.jpg" class="card-img-top"
+                        alt="The-Duchess-Facts" />
+                    <div class="card-body">
+                        <h5 class="card-title">The Duchess Facts</h5>
+                        <p class="card-text">
+                            320 grs. de carne, doble Cheddar, doble panceta ahumada y
+                            cebolla grillada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/8_Jackie_Chan_A.jpg" class="card-img-top" alt="Jackie-Chan" />
+                    <div class="card-body">
+                        <h5 class="card-title">Jackie Chan</h5>
+                        <p class="card-text">
+                            320 grs. de carne, doble Cheddar, Jack Daniels Pulled Pork y pan
+                            de queso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/hamburguesas/9_Eggsplotion_A.jpg" class="card-img-top" alt="Eggsplotion" />
+                    <div class="card-body">
+                        <h5 class="card-title">Eggsplotion</h5>
+                        <p class="card-text">
+                            160 grs. de carne, Cheddar, panceta ahumada y huevo frito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Papas-->
+    <div class="container-md papas">
+        <div class="row justify-content-center" align="center">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/22_Krisspy_Fries_A.jpg" class="card-img-top" alt="Crinkle-Fries" />
+                    <div class="card-body">
+                        <h5 class="card-title">Crinkle Fries</h5>
+                        <p class="card-text">Papas clásicas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/23_Cheezy_Fries_A.jpg" class="card-img-top" alt="Cheesy-Fries" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesy Fries</h5>
+                        <p class="card-text">Papas con Cheddar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/24_Deluxe_Fries_A.jpg" class="card-img-top" alt="Deluxe-Fries" />
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Fries</h5>
+                        <p class="card-text">Papas con Cheddar y bacon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/25_Eggy_Fries_A.jpg" class="card-img-top" alt="Eggy-Fries" />
+                    <div class="card-body">
+                        <h5 class="card-title">Eggy Fries</h5>
+                        <p class="card-text">Papas con huevo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/26_Sweet_Fries_A.jpg" class="card-img-top" alt="Sweet-Fries" />
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Fries</h5>
+                        <p class="card-text">Batatas fritas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/27_Onion_Rings_A.jpg" class="card-img-top" alt="Onion-Rings " />
+                    <div class="card-body">
+                        <h5 class="card-title">Onion Rings</h5>
+                        <p class="card-text">Aros de cebolla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/28_Crispy_Nuggets_A.jpg " class="card-img-top" alt="Crispy-Nuggets " />
+                    <div class="card-body">
+                        <h5 class="card-title">Crispy Nuggets</h5>
+                        <p class="card-text">Con salsa Barbacoa o Honey Mustard.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/papas/29_Muzzarella_Sticks_A.jpg " class="card-img-top"
+                        alt="Muzzarella-Sticks " />
+                    <div class="card-body">
+                        <h5 class="card-title">Muzzarella Sticks</h5>
+                        <p class="card-text">Bastones de Muzzarella.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Panchos-->
+    <div class="container-md panchos">
+        <div class="row justify-content-center" align="center">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/panchos/Pancho_Simple.jpg" class="card-img-top" alt="Classic-Dog" />
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Dog</h5>
+                        <p class="card-text">Sale solo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/panchos/Pancho_Queso.jpg" class="card-img-top" alt="Deluxe-Dog" />
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Dog</h5>
+                        <p class="card-text">Cheddar y bacon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/panchos/Pancho_Cebolla.jpg" class="card-img-top" alt="Kid-Dog" />
+                    <div class="card-body">
+                        <h5 class="card-title">Kid Dog</h5>
+                        <p class="card-text">Cheddar, cebolla crispy y sweet chilli.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Ensaladas-->
+    <div class="container-md ensaladas">
+        <div class="row justify-content-center" align="center">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/saludable/19_TBC_Salad_A.jpg" class="card-img-top" alt="TBC-Salad " />
+                    <div class="card-body">
+                        <h5 class="card-title">TBC Salad</h5>
+                        <p class="card-text">
+                            Lechuga, tomate cherry, pollo crispy, Cheddar en cubos, panceta
+                            picada, choclo, y huevo rallado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/saludable/20_Caesar_Salad_A.jpg" class="card-img-top" alt="Caesar-Salad " />
+                    <div class="card-body">
+                        <h5 class="card-title">Caesar Salad</h5>
+                        <p class="card-text">
+                            Lechuga, queso en hebras, pollo crispy, croutones, y salsa
+                            Caesar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Helados-->
+    <div class="container-md helados">
+        <div class="row justify-content-center" align="center">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/helados/30_Paleta_Tramontana_A.jpg" class="card-img-top" alt="Tramontana" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tramontana</h5>
+                        <p class="card-text">
+                            Helado de crema americana, dulce de leche natural, pelotitas de
+                            cereal, bañado con chocolate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/helados/31_Paleta_Chocotorta_A.jpg" class="card-img-top" alt="Chocotorta" />
+                    <div class="card-body">
+                        <h5 class="card-title">Chocotorta</h5>
+                        <p class="card-text">
+                            Helado de dulce de leche, dulce de leche natural, trozos de
+                            chocolinas, bañado en chocolate negro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/helados/32_Paleta_Oreo_A.jpg" class="card-img-top" alt="Oreo" />
+                    <div class="card-body">
+                        <h5 class="card-title">Oreo</h5>
+                        <p class="card-text">
+                            Helado de crema americana, dulce de leche natural, trozos de
+                            oreo, bañado con chocolate blanco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/helados/33_Paleta_Almendras_A.jpg" class="card-img-top" alt="Almendras" />
+                    <div class="card-body">
+                        <h5 class="card-title">Almendras</h5>
+                        <p class="card-text">
+                            Helado de dulce de leche, cobertura de crema, almendras
+                            caramelizadas, bañado con chocolate blanco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bebidas-->
+    <div class="container-md bebidas">
+        <div class="row justify-content-center" align="center">
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/Bebidas_Gaseosas.jpg" class="card-img-top" alt="Gaseosas" />
+                    <div class="card-body">
+                        <h5 class="card-title">Gaseosas</h5>
+                        <p class="card-text">
+                            Coca Cola Regular, Coca Cola Light, Coca Cola Zero, Sprite Zero,
+                            Fanta Zero, Schweppes Pomelo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/Bebidas_Gaseosas.jpg" class="card-img-top" alt="WE-Ser" />
+                    <div class="card-body">
+                        <h5 class="card-title">WE Ser</h5>
+                        <p class="card-text">Citrus, Manzana.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/Bebidas_Agua.jpg" class="card-img-top" alt="Agua" />
+                    <div class="card-body">
+                        <h5 class="card-title">Agua</h5>
+                        <p class="card-text">Con gas, sin gas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/Bebidas_Stella_Artois.jpg" class="card-img-top" alt="Stella-Artois" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cerveza Stella Artois</h5>
+                        <p class="card-text">Porrón.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/34_Patagonia_A.jpg" class="card-img-top" alt="Patagonia" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cerveza Patagonia</h5>
+                        <p class="card-text">
+                            Tirada de 475cc. Bohemian Pilsener, Amber Lager, IPA y Porter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/Bebidas_Corona.jpg" class="card-img-top" alt="Corona" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cerveza Corona</h5>
+                        <p class="card-text">Porrón.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-xl-4">
+                <div class="card">
+                    <img src="img/menu/bebidas/Bebidas_Vino.jpg" class="card-img-top" alt="Trumpeter" />
+                    <div class="card-body">
+                        <h5 class="card-title">Vino tinto o blanco</h5>
+                        <p class="card-text">Trumpeter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sucursales-->
+    <h2 class="subtitulo" id="sucursales">NUESTRAS SUCURSALES</h2>
+    <div class="container-fluid text-center mapa m-0">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26276.363404824504!2d-58.427315!3d-34.590367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb587f4f30183%3A0x2d2cfbba0314f684!2sThe%20Burger%20Company!5e0!3m2!1ses-419!2sar!4v1608303777988!5m2!1ses-419!2sar"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa"></iframe>
+    </div>
+
+    <!--Contacto-->
+    <h2 id="contacto" class="subtitulo">CONTACTANOS</h2>
+    <div class="container contacto">
+        <form name="contacto" method="POST" data-netlify="true">
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" class="form-control" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje"></textarea>
+                </div>
+                <div class="col-1 mb-4">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <span style="font-weight: 700;color:red">© Copyright B&J Burger 2015</span>
+                        <span>- Honduras 4733 - Palermo Soho</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <p id="hora">
+                        <span>LUNES-DOMINGO</span>
+                        <span style="color:red">12:00 - 24:00HS.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW "
+        crossorigin="anonymous "></script>
+    <script src="script.js "></script>
+</body>
+
+</html>
