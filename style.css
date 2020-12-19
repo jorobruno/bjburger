@@ -17,33 +17,33 @@ body {
     rgba(148, 5, 5, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+  background-position: center;
   background-attachment: fixed;
 }
 
-@media (max-width:1920px) {
-    body {
-      background-image: url("img/bgXl.png");
-    }
+@media (max-width: 1920px) {
+  body {
+    background-image: url("img/bgXl.png");
+  }
 }
 
-@media (max-width:1280px) {
+@media (max-width: 1280px) {
   body {
     background-image: url("img/bgLg.png");
   }
 }
 
-@media (max-width:960px) {
+@media (max-width: 960px) {
   body {
     background-image: url("img/bgMd.png");
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   body {
     background-image: url("img/bgSm.png");
   }
 }
-
 
 *,
 *::before,
