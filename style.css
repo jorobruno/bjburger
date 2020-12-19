@@ -66,7 +66,7 @@ body {
 
 .intro {
   max-width: 700px;
-  margin: 2% auto;
+  margin: 0 auto;
 }
 
 #intro {
@@ -179,7 +179,6 @@ body {
 
 .subtitulo {
   padding: 1rem;
-  margin: 1rem;
   font-size: 3rem;
   text-align: center;
   color: white;
