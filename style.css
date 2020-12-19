@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
+
+@font-face {
+  font-family: "lakesight_personal_use_onlyRg";
+  src: url("fonts/lakesight_personaluseonly-webfont.woff2") format("woff2"),
+    url("fonts/lakesight_personaluseonly-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-size: 10px;
   font-family: "Raleway", sans-serif;
@@ -40,6 +49,14 @@ body {
   background-color: #555;
 }
 
+.separador {
+  background: url(img/arrowst.png) center center no-repeat;
+  width: 100%;
+  height: 24px;
+  top: 0;
+  position: relative;
+}
+
 #marca {
   color: white;
   font-size: 2.5rem;
@@ -60,7 +77,7 @@ body {
 }
 
 #logo {
-  height:100px;
+  height: 100px;
   margin-right: 1rem;
 }
 
@@ -70,10 +87,10 @@ body {
 
 @media only screen and (max-width: 412px) {
   #logo {
-    display:none;
+    display: none;
   }
   #logoSm {
-    display:inline-block;
+    display: inline-block;
     width: 100px;
   }
 }
@@ -97,7 +114,6 @@ body {
   }
 }
 
-
 .carousel {
   border-radius: 10px;
   border: 3px solid white;
@@ -113,7 +129,8 @@ body {
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-family: "lakesight_personal_use_onlyRg";
+  font-size: 2rem;
   font-weight: 700;
   text-shadow: 0px 1px 3px rgb(191, 5, 5);
 }
@@ -184,7 +201,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   #mapa {
-    width: 300px; 
+    width: 300px;
     height: 300px;
   }
 }
@@ -199,20 +216,7 @@ form label {
 }
 
 #mensaje {
-  width: 100%;
-  height: 200px;
-  vertical-align: top;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 5px;
-}
-
-form button {
-  padding: .4rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  border: none;
+  height: 150px;
 }
 
 footer {

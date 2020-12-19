@@ -15,7 +15,8 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-md bg-light navbar-light" id="inicio">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand" id="marca"><img src="img/Logo.png" alt="Logo" id="logo" /><img src="img/icono.png" alt="Logo" id="logoSm"></a>
+            <a href="index.html" class="navbar-brand" id="marca"><img src="img/Logo.png" alt="Logo" id="logo" /><img
+                    src="img/icono.png" alt="Logo" id="logoSm"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#expandirNav"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,6 +39,7 @@
                 d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 11.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
         </svg>
     </button>
+    <div class="separador mt-4"></div>
     <div class="container intro">
         <p id="intro">
             En B&J no copiamos una hamburguesa, la reinventamos. Desarrollamos una receta exclusiva, utilizando un blend
@@ -85,6 +87,7 @@
     </div>
 
     <!--Menu-->
+    <div class="separador mt-4"></div>
     <div class="container">
         <h2 id="menu" class="subtitulo">NUESTRO MENÚ</h2>
     </div>
@@ -478,14 +481,16 @@
             </div>
         </div>
     </div>
+    <div class="separador"></div>
 
     <!--Sucursales-->
     <h2 class="subtitulo" id="sucursales">NUESTRAS SUCURSALES</h2>
-    <div class="container-fluid text-center mapa m-0">
+    <div class="container-fluid text-center mapa mb-4">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26276.363404824504!2d-58.427315!3d-34.590367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb587f4f30183%3A0x2d2cfbba0314f684!2sThe%20Burger%20Company!5e0!3m2!1ses-419!2sar!4v1608303777988!5m2!1ses-419!2sar"
             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa"></iframe>
     </div>
+    <div class="separador"></div>
 
     <!--Contacto-->
     <h2 id="contacto" class="subtitulo">CONTACTANOS</h2>
@@ -502,14 +507,15 @@
                 </div>
                 <div class="col-12">
                     <label for="mensaje" name="mensaje" class="form-label">Mensaje</label>
-                    <textarea id="mensaje"></textarea>
+                    <textarea class="form-control"name="mensaje" id="mensaje"></textarea>
                 </div>
                 <div class="col-1 mb-4">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="btn btn-warning">Enviar</button>
                 </div>
             </div>
         </form>
     </div>
+    <div class="separador mb-4"></div>
 
     <!--Footer-->
     <footer>
