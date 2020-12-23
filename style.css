@@ -101,8 +101,7 @@ body {
 }
 
 #logo {
-  height: 100px;
-  margin-right: 1rem;
+  height: 70px;
 }
 
 #logoSm {
@@ -115,7 +114,7 @@ body {
   }
   #logoSm {
     display: inline-block;
-    width: 100px;
+    width: 80px;
   }
 }
 
